@@ -11,74 +11,86 @@
 </head>
 <body>
     <div class="wrapper">
-        <header>
-            <div class="logo">Portfolio</div>
-            <nav>
-                <ul>
-                    <li><a href="/index.html">Главная</a></li>
-                    <li><a href="/projects.html">Проекты</a></li>
-                    <li><a href="#">Обо мне</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-            </nav>
-            <div class="burger">
-                <span></span>
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+
+        <header class="header">
+            <div class="header__container _container">
+                <div class="logo">Sheil777</div>
+                <nav>
+                    <ul>
+                        <li><a href="/index.html">Главная</a></li>
+                        <li><a href="/projects.html">Проекты</a></li>
+                        <li><a href="#">Обо мне</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="burger">
+                    <span></span>
+                </div>
             </div>
         </header>
 
         <section class="hero">
-            <div class="hero__content">
-                <h1>Веб-разработчик с&nbsp;фокусом на современные решения</h1>
-                <p>Создаю эффективные и визуально привлекательные веб-приложения с использованием передовых технологий. Специализируюсь на frontend и backend разработке.</p>
-                <a href="./projects.html" class="btn">Смотреть проекты</a>
-            </div>
-            <div class="hero__image">
-                <img src="./assets/img/hero.jpg" alt="Портфолио веб-разработчика">
+            <div class="hero__container _container">
+                <div class="hero__content">
+                    <h1>Веб-разработчик с&nbsp;фокусом на современные решения</h1>
+                    <p>Создаю эффективные и визуально привлекательные веб-приложения с использованием передовых технологий.</p>
+                    <a href="./projects.html" class="btn"><img src="./assets/img/icons/case.svg"> Смотреть проекты</a>
+                </div>
+                <div class="hero__image">
+                    <img src="./assets/img/hero.jpg" alt="Портфолио веб-разработчика">
+                </div>
             </div>
         </section>
 
         <section class="skills">
-            <h2>Мои навыки</h2>
-            <div class="skills-container">
-                <div class="skill-card">
-                    <span class="material-symbols-outlined">code</span>
-                    <h3>Frontend</h3>
-                    <p>HTML, CSS, JavaScript, Vue.js, React</p>
+            <div class="skills__container _container">
+                <h2>Мои навыки</h2>
+                <div class="skills-container">
+                    <div class="skill-card">
+                        <span class="material-symbols-outlined">code</span>
+                        <h3>Frontend</h3>
+                        <p>HTML, CSS, JavaScript, Vue.js, React</p>
+                    </div>
+                    <div class="skill-card">
+                        <span class="material-symbols-outlined">storage</span>
+                        <h3>Backend</h3>
+                        <p>PHP, Laravel</p>
+                    </div>
+                    <div class="skill-card">
+                        <span class="material-symbols-outlined">database</span>
+                        <h3>Базы данных</h3>
+                        <p>MySQL, SQLite</p>
+                    </div>
+                    <!-- <div class="skill-card">
+                        <i class="material-icons">cloud</i>
+                        <h3>Облако</h3>
+                        <p>AWS, Firebase, Docker</p>
+                    </div> -->
                 </div>
-                <div class="skill-card">
-                    <span class="material-symbols-outlined">storage</span>
-                    <h3>Backend</h3>
-                    <p>PHP, Laravel</p>
-                </div>
-                <div class="skill-card">
-                    <span class="material-symbols-outlined">database</span>
-                    <h3>Базы данных</h3>
-                    <p>MySQL, SQLite</p>
-                </div>
-                <!-- <div class="skill-card">
-                    <i class="material-icons">cloud</i>
-                    <h3>Облако</h3>
-                    <p>AWS, Firebase, Docker</p>
-                </div> -->
             </div>
         </section>
 
         <section class="contact">
-            <h2>Свяжитесь со мной</h2>
-            <p>Готов обсудить ваш проект и предложить лучшие решения</p>
-            <div class="social-links">
-                <!-- <a href="#"><span class="material-symbols-outlined">email</span></a> -->
-                <a href="http://t.me/Sheil777" target="_blank">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve"><g id="XMLID_496_"><path id="XMLID_497_" d="M5.299,144.645l69.126,25.8l26.756,86.047c1.712,5.511,8.451,7.548,12.924,3.891l38.532-31.412 c4.039-3.291,9.792-3.455,14.013-0.391l69.498,50.457c4.785,3.478,11.564,0.856,12.764-4.926L299.823,29.22 c1.31-6.316-4.896-11.585-10.91-9.259L5.218,129.402C-1.783,132.102-1.722,142.014,5.299,144.645z M96.869,156.711l135.098-83.207 c2.428-1.491,4.926,1.792,2.841,3.726L123.313,180.87c-3.919,3.648-6.447,8.53-7.163,13.829l-3.798,28.146 c-0.503,3.758-5.782,4.131-6.819,0.494l-14.607-51.325C89.253,166.16,91.691,159.907,96.869,156.711z"></path></g></svg>
-                </a>
-                <a href="https://kwork.ru/user/sheil777" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32px" height="32px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g><path style="opacity:0.784" fill="#ffa800" d="M 0.5,0.5 C 3.83333,0.5 7.16667,0.5 10.5,0.5C 11.3885,6.79132 9.22181,11.7913 4,15.5C 3.50166,12.1832 3.33499,8.8499 3.5,5.5C 2.5,5.5 1.5,5.5 0.5,5.5C 0.5,3.83333 0.5,2.16667 0.5,0.5 Z"/></g>
-                        <g><path class="hover-white" style="opacity:0.806" fill="#000" d="M 19.5,0.5 C 22.5719,0.182589 25.5719,0.515923 28.5,1.5C 25.0226,6.14509 21.3559,10.6451 17.5,15C 21.5,20 25.5,25 29.5,30C 26.5,30.6667 23.5,30.6667 20.5,30C 17.9917,26.6619 15.325,23.4952 12.5,20.5C 11.914,20.7093 11.414,21.0426 11,21.5C 10.502,24.4816 10.3354,27.4816 10.5,30.5C 8.16667,30.5 5.83333,30.5 3.5,30.5C 3.33499,27.1501 3.50166,23.8168 4,20.5C 9.40574,13.9388 14.5724,7.27215 19.5,0.5 Z"/></g>
-                    </svg>
-                </a>
-                <!-- <a href="#"><i class="material-icons">language</i></a> -->
-                <!-- <a href="#"><i class="material-icons">person</i></a> -->
+            <div class="contact__container _container">
+                <h2>Свяжитесь со мной</h2>
+                <p>Готов обсудить ваш проект и предложить лучшие решения</p>
+                <div class="social-links">
+                    <!-- <a href="#"><span class="material-symbols-outlined">email</span></a> -->
+                    <a href="http://t.me/Sheil777" target="_blank">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve"><g id="XMLID_496_"><path id="XMLID_497_" d="M5.299,144.645l69.126,25.8l26.756,86.047c1.712,5.511,8.451,7.548,12.924,3.891l38.532-31.412 c4.039-3.291,9.792-3.455,14.013-0.391l69.498,50.457c4.785,3.478,11.564,0.856,12.764-4.926L299.823,29.22 c1.31-6.316-4.896-11.585-10.91-9.259L5.218,129.402C-1.783,132.102-1.722,142.014,5.299,144.645z M96.869,156.711l135.098-83.207 c2.428-1.491,4.926,1.792,2.841,3.726L123.313,180.87c-3.919,3.648-6.447,8.53-7.163,13.829l-3.798,28.146 c-0.503,3.758-5.782,4.131-6.819,0.494l-14.607-51.325C89.253,166.16,91.691,159.907,96.869,156.711z"></path></g></svg>
+                    </a>
+                    <a href="https://kwork.ru/user/sheil777" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32px" height="32px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g><path style="opacity:0.784" fill="#ffa800" d="M 0.5,0.5 C 3.83333,0.5 7.16667,0.5 10.5,0.5C 11.3885,6.79132 9.22181,11.7913 4,15.5C 3.50166,12.1832 3.33499,8.8499 3.5,5.5C 2.5,5.5 1.5,5.5 0.5,5.5C 0.5,3.83333 0.5,2.16667 0.5,0.5 Z"/></g>
+                            <g><path class="hover-white" style="opacity:0.806" fill="#000" d="M 19.5,0.5 C 22.5719,0.182589 25.5719,0.515923 28.5,1.5C 25.0226,6.14509 21.3559,10.6451 17.5,15C 21.5,20 25.5,25 29.5,30C 26.5,30.6667 23.5,30.6667 20.5,30C 17.9917,26.6619 15.325,23.4952 12.5,20.5C 11.914,20.7093 11.414,21.0426 11,21.5C 10.502,24.4816 10.3354,27.4816 10.5,30.5C 8.16667,30.5 5.83333,30.5 3.5,30.5C 3.33499,27.1501 3.50166,23.8168 4,20.5C 9.40574,13.9388 14.5724,7.27215 19.5,0.5 Z"/></g>
+                        </svg>
+                    </a>
+                    <!-- <a href="#"><i class="material-icons">language</i></a> -->
+                    <!-- <a href="#"><i class="material-icons">person</i></a> -->
+                </div>
             </div>
         </section>
     </div>
