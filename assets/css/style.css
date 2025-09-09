@@ -93,6 +93,8 @@ header {
   font-size: 28px;
   font-weight: 700;
   color: #3f51b5;
+  position: relative;
+  z-index: 30;
 }
 
 nav ul {
@@ -110,6 +112,7 @@ nav ul {
     background-color: #fff;
     padding: 20px;
     z-index: 10;
+    padding-top: 80px;
     transform: translateX(calc(100% + 30px));
     transition: transform 0.3s;
   }
@@ -141,6 +144,7 @@ nav ul li a:hover {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 60px;
+  gap: 20px;
 }
 .hero__content {
   flex: 1;
@@ -157,6 +161,16 @@ nav ul li a:hover {
   margin-bottom: 30px;
   color: #666;
 }
+.hero__image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.hero__image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
 
 .btn {
   display: inline-block;
@@ -171,18 +185,6 @@ nav ul li a:hover {
 
 .btn:hover {
   background-color: #303f9f;
-}
-
-.hero-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.hero-image img {
-  max-width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .skills {
