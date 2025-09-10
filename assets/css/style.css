@@ -10,6 +10,21 @@
   padding: 0 20px;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+  color: #333;
+  min-height: 100vh;
+}
+body.lock {
+  overflow: hidden;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
 .burger {
   display: none;
   position: absolute;
@@ -114,22 +129,9 @@
   animation-delay: 4s;
 }
 
-body {
-  font-family: "Montserrat", sans-serif;
-  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
-  color: #333;
-  min-height: 100vh;
-}
-body.lock {
-  overflow: hidden;
-}
-
-.wrapper {
-  position: relative;
-  overflow: hidden;
-}
-
 .header {
+  position: relative;
+  z-index: 50;
   background-color: rgba(255, 255, 255, 0.9);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
           backdrop-filter: saturate(180%) blur(20px);
@@ -200,6 +202,14 @@ nav ul li a:hover {
   color: #3f51b5;
 }
 
+.hero {
+  padding-top: 50px;
+}
+@media (max-width: 500px) {
+  .hero {
+    padding-top: 25px;
+  }
+}
 .hero__container {
   display: flex;
   align-items: center;
@@ -229,6 +239,16 @@ nav ul li a:hover {
   color: #333;
   font-weight: 600;
 }
+@media (max-width: 500px) {
+  .hero__content h1 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 390px) {
+  .hero__content h1 {
+    font-size: 30px;
+  }
+}
 .hero__content p {
   max-width: 720px;
   margin: 0 auto;
@@ -236,6 +256,11 @@ nav ul li a:hover {
   line-height: 1.6;
   margin-bottom: 30px;
   color: #666;
+}
+@media (max-width: 500px) {
+  .hero__content p {
+    line-height: 1.2;
+  }
 }
 .hero__image {
   flex: 1;
@@ -362,17 +387,204 @@ nav ul li a:hover {
   border-radius: 50%;
   background-color: #f0f2f5;
   color: #333;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s, fill 0.3s;
+}
+.social-links a svg .hover-white {
+  transition: fill 0.3s;
+}
+.social-links a:hover {
+  background-color: #3f51b5;
+  color: white;
+  fill: #fff;
+  transform: translateY(-3px);
+}
+.social-links a:hover svg .hover-white {
+  fill: #fff;
 }
 .social-links svg {
   height: 25px;
 }
 
-.social-links a:hover {
+/* Projects */
+.page-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.page-title h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+  color: #333;
+}
+.page-title p {
+  font-size: 18px;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 8px 20px;
+  margin: 5px;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #555;
+  transition: all 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+.filter-btn:hover, .filter-btn:active {
   background-color: #3f51b5;
   color: white;
-  fill: #fff;
 }
-.social-links a:hover svg .hover-white {
-  fill: #fff;
+
+.projects__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+@media (max-width: 390px) {
+  .projects__container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+.project-card:hover .project-card__image img {
+  transform: scale(1.05);
+}
+.project-card:hover .project-card__overlay {
+  opacity: 1;
+}
+.project-card__image {
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+}
+.project-card__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.5s;
+}
+.project-card__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(63, 81, 181, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.project-card__overlay a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 10px;
+  color: #3f51b5;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+.project-card__overlay a:hover {
+  transform: scale(1.1);
+}
+.project-card__content {
+  padding: 25px;
+}
+.project-card__title {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #333;
+}
+.project-card__description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 15px;
+}
+.project-card__tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.project-card__link {
+  display: inline-flex;
+  align-items: center;
+  color: #3f51b5;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.project-card__link:hover {
+  color: #303f9f;
+}
+.project-card__link i {
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+.tech-tag {
+  padding: 5px 12px;
+  background-color: #f0f2f5;
+  border-radius: 15px;
+  font-size: 14px;
+  color: #3f51b5;
+  font-weight: 500;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.pagination a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  background-color: white;
+  border-radius: 50%;
+  color: #555;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.pagination a:hover, .pagination a.active {
+  background-color: #3f51b5;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
