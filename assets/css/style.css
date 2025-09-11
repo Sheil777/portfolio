@@ -352,7 +352,7 @@ nav ul li a:hover {
   color: #666;
 }
 
-.contact__container {
+.contact__content {
   text-align: center;
   padding: 40px 0;
   background-color: white;
@@ -409,8 +409,8 @@ nav ul li a:hover {
   text-align: center;
   margin-bottom: 50px;
 }
-.page-title h1 {
-  font-size: 42px;
+.page-title h2 {
+  font-size: 32px;
   margin-bottom: 15px;
   color: #333;
 }
@@ -450,7 +450,7 @@ nav ul li a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 @media (max-width: 390px) {
   .projects__container {
