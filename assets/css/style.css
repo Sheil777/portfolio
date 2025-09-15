@@ -962,6 +962,7 @@ nav ul li a:hover {
   overflow: hidden;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s;
+  cursor: pointer;
 }
 
 .gallery-item:hover {

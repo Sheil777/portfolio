@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детали проекта</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+
+        <header class="header">
+            <div class="header__container _container">
+                <a href="/index.html" class="logo">Sheil777</a>
+                <nav>
+                    <ul>
+                        <li><a href="/index.html">Главная</a></li>
+                        <li><a href="/projects.html">Проекты</a></li>
+                        <li><a href="#">Обо мне</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="burger">
+                    <span></span>
+                </div>
+            </div>
+        </header>
+
+        <!-- <div class="_container">
+            <a href="/projects.html" class="back-link">
+                <i class="material-icons">arrow_back</i>
+                Вернуться к проектам
+            </a>
+        </div> -->
+
+        <section class="project-header">
+            <div class="project-header__container _container">
+                <div class="project-header__content">
+                    <div class="project-header__image">
+                        <img src="../assets/img/products/stroivermita/main.png" alt="Главная страница сайта стройвермита">
+                    </div>
+                    <div class="project-info">
+                        <h1 class="project-title">Стройвермита</h1>
+                        <p class="project-description">Адаптивная вёрстка многостраничного сайта для организации ООО «Стройвермита»</p>
+                        <div class="project-links">
+                            <a href="https://stroivermita.ru/" target="_blank" class="project-link">
+                                <i class="material-icons">visibility</i>
+                                Демо
+                            </a>
+                            <a href="https://github.com/Sheil777/stroivermita" target="_blank" class="project-link secondary">
+                                <i class="material-icons">code</i>
+                                Код
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="_container">
+                <h2 class="section-title">Использованные технологии</h2>
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <i class="material-icons tech-icon">storage</i>
+                        <h3 class="tech-name">HTML</h3>
+                        <p class="tech-description">Язык разметки для создания и&nbsp;структурирования веб-страницы</p>
+                    </div>
+                    <div class="tech-card">
+                        <i class="material-icons tech-icon">storage</i>
+                        <h3 class="tech-name">SCSS</h3>
+                        <p class="tech-description">Препроцессор CSS, который расширяет базовую функциональность CSS</p>
+                    </div>
+                    <div class="tech-card">
+                        <i class="material-icons tech-icon">payment</i>
+                        <h3 class="tech-name">JavaScript</h3>
+                        <p class="tech-description">Интерпретируемый язык программирования высокого уровня</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="_container">
+                <h2 class="section-title">Сложности и решения</h2>
+                <ul class="challenges-list">
+                    <li class="challenge-item">
+                        <i class="material-icons challenge-icon">priority_high</i>
+                        <div class="challenge-content">
+                            <h3>Плохая прогрузка картинок в отзывах</h3>
+                            <p>При прокручивании сертификатов в отзывах иногда пропадала первоначальная или последняя картинка</p>
+                            <div class="solution">
+                                <div class="solution-title">Решение:</div>
+                                <div class="solution-text">Выяснилось, что это баг текущей версии библиотеки Swiper. Решилось подключением более старой версии</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="challenge-item">
+                        <i class="material-icons challenge-icon">priority_high</i>
+                        <div class="challenge-content">
+                            <h3>Залипание прокрутки в разделе "Свяжитесь с нами"</h3>
+                            <p>При пролистывании страницы, если курсор навести в область карты, то вместо ожидаемой прокрутки возникало увеличении или уменьшение масштаба карты</p>
+                            <div class="solution">
+                                <div class="solution-title">Решение:</div>
+                                <div class="solution-text">Проблема решилась добавлением карте стиля "pointer-events: none;" и написанием скрипта, который снимает этот стиль при клике на неё</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="_container">
+                <h2 class="section-title">Галерея проекта</h2>
+                <div class="gallery">
+                    <div class="gallery-item" data-index="0">
+                        <img src="../assets/img/products/stroivermita/main.png" alt="Главная страница">
+                    </div>
+                    <div class="gallery-item" data-index="1">
+                        <img src="../assets/img/products/stroivermita/about.png" alt="О компании">
+                    </div>
+                    <div class="gallery-item" data-index="2">
+                        <img src="../assets/img/products/stroivermita/features.png" alt="Особенности">
+                    </div>
+                    <div class="gallery-item" data-index="3">
+                        <img src="../assets/img/products/stroivermita/feedback.png" alt="Отзывы">
+                    </div>
+                    <div class="gallery-item" data-index="3">
+                        <img src="../assets/img/products/stroivermita/contacts.png" alt="Контакты">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="_container">
+                <h2 class="section-title">Отзыв клиента</h2>
+                <div class="testimonial">
+                    <p class="testimonial-content">
+                        1) Стояла задача сделать верстку сайта по макету, сделанном на фигме<br>
+                        2) Результат работы оцениваю на отлично: 10 из 10<br>
+                        3) Работа исполнителя очень понравилась. Буду обращаться еще
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">rc</div>
+                        <div class="author-info">
+                            <h4>ruscom125</h4>
+                            <!-- <p>Основатель бренда одежды</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <div class="_container">
+            <div class="project-navigation">
+                <a href="#" class="nav-link">
+                    <i class="material-icons">arrow_back</i>
+                    Предыдущий проект
+                </a>
+                <a href="#" class="nav-link">
+                    Следующий проект
+                    <i class="material-icons">arrow_forward</i>
+                </a>
+            </div>
+        </div> -->
+    </div>
+
+    <!-- Модальное окно -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            
+            <div class="swiper swiper-modal">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__container">
+                            <img src="../assets/img/products/stroivermita/main.png" alt="Главная страница">
+                            <div class="image-info">
+                                <h3>Главная страница</h3>
+                                <!-- <p>Волшебное природное явление</p> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__container">
+                            <img src="../assets/img/products/stroivermita/about.png" alt="О компании">
+                            <div class="image-info">
+                                <h3>О компании</h3>
+                                <!-- <p>Величественные горы на закате</p> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__container">
+                            <img src="../assets/img/products/stroivermita/features.png" alt="Особенности продукции">
+                            <div class="image-info">
+                                <h3>Особенности продукции</h3>
+                                <!-- <p>Тайны зеленого леса</p> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__container">
+                            <img src="../assets/img/products/stroivermita/feedback.png" alt="Отзывы">
+                            <div class="image-info">
+                                <h3>Отзывы</h3>
+                                <!-- <p>Кристально чистая вода альпийских озер</p> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__container">
+                            <img src="../assets/img/products/stroivermita/contacts.png" alt="Контакты">
+                            <div class="image-info">
+                                <h3>Контакты</h3>
+                                <!-- <p>Кристально чистая вода альпийских озер</p> -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <!-- Навигационные кнопки -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/gallery.js"></script>
+</body>
+</html>
