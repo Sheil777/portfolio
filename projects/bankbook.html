@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 </head>
 <body>
     <div class="wrapper">
@@ -155,16 +156,16 @@
             <div class="_container">
                 <h2 class="section-title">Галерея проекта</h2>
                 <div class="gallery">
-                    <div class="gallery-item">
+                    <div class="gallery-item" data-index="0">
                         <img src="../assets/img/products/bankbook/about.png" alt="Промо-страница">
                     </div>
-                    <div class="gallery-item">
+                    <div class="gallery-item" data-index="1">
                         <img src="../assets/img/products/bankbook/main.png" alt="Главная страница">
                     </div>
-                    <div class="gallery-item">
+                    <div class="gallery-item" data-index="2">
                         <img src="../assets/img/products/bankbook/menu.png" alt="Страница меню">
                     </div>
-                    <div class="gallery-item">
+                    <div class="gallery-item" data-index="3">
                         <img src="../assets/img/products/bankbook/addCategory.png" alt="Страница добавления новой категории">
                     </div>
                 </div>
@@ -200,6 +201,66 @@
             </div>
         </div> -->
     </div>
+
+    <!-- Модальное окно -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            
+            <div class="swiper swiper-modal">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__container">
+                            <img src="../assets/img/products/bankbook/about.png" alt="Страница информации о сервисе">
+                            <div class="image-info">
+                                <h3>Страница информации о сервисе</h3>
+                                <!-- <p>Волшебное природное явление</p> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__container">
+                            <img src="../assets/img/products/bankbook/main.png" alt="Главная страница">
+                            <div class="image-info">
+                                <h3>Главная страница</h3>
+                                <!-- <p>Величественные горы на закате</p> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__container">
+                            <img src="../assets/img/products/bankbook/menu.png" alt="Страница меню">
+                            <div class="image-info">
+                                <h3>Страница меню</h3>
+                                <!-- <p>Тайны зеленого леса</p> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__container">
+                            <img src="../assets/img/products/bankbook/addCategory.png" alt="Страница добавления новой категории">
+                            <div class="image-info">
+                                <h3>Страница добавления новой категории</h3>
+                                <!-- <p>Кристально чистая вода альпийских озер</p> -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <!-- Навигационные кнопки -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/gallery.js"></script>
 </body>
 </html>
