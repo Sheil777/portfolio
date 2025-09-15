@@ -30,6 +30,7 @@
     color: #3f51b5;
     position: relative;
     z-index: 30;
+    text-decoration: none;
 }
 
 nav {
@@ -227,24 +228,31 @@ nav ul li a:hover {
 
     &__content {
         text-align: center;
-        padding: 40px 0;
+        padding: 40px 25px;
         background-color: white;
         border-radius: 10px;
         box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-
     }
+
+    h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        color: #333;
+
+        @media (max-width: 475px) {
+            font-size: 28px;
+        }
+    }
+
+    p {
+        font-size: 18px;
+        margin-bottom: 30px;
+        color: #666;
+    }
+
 }
 
-.contact h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #333;
-}
-.contact p {
-    font-size: 18px;
-    margin-bottom: 30px;
-    color: #666;
-}
+
 .social-links {
     display: flex;
     justify-content: center;
@@ -541,6 +549,7 @@ nav ul li a:hover {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            object-position: top;
         }
     }
 }
@@ -735,6 +744,7 @@ nav ul li a:hover {
     align-items: center;
 }
 .author-avatar {
+    flex: 0 0 50px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -761,10 +771,17 @@ nav ul li a:hover {
     justify-content: space-between;
     margin-top: 40px;
     margin-bottom: 20px;
+    gap: 20px;
+
+    @media (max-width: 380px) {
+        flex-direction: column;
+        margin-top: 0;
+    }
 }
 .nav-link {
     display: flex;
     align-items: center;
+    gap: 8px;
     color: #3f51b5;
     text-decoration: none;
     font-weight: 500;
@@ -773,11 +790,23 @@ nav ul li a:hover {
     border-radius: 30px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.05);
     transition: all 0.3s;
-}
-.nav-link:hover {
-    background-color: #3f51b5;
-    color: white;
-}
-.nav-link i {
-    margin: 0 8px;
+
+    @media (max-width: 450px) {
+        font-size: 14px;
+    }
+
+    @media (max-width: 380px) {
+        justify-content: space-between;
+    }
+
+    i {
+        @media (max-width: 450px) {
+            font-size: 20px;
+        }
+    }
+
+    &:hover {
+        background-color: #3f51b5;
+        color: white;
+    }
 }
